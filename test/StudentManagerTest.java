@@ -1,12 +1,11 @@
 import students.Student;
+import students.StudentManager;
 
 public class StudentManagerTest {
     public static void main(String[] args) {
         Student trang = new Student("Trang", 23);
-        System.out.println(trang.getInfomation());
-        System.out.println("name: " + trang.getName());
-        System.out.println("age: " + trang.getAge());
-
-
+        StudentManager studentManager = new StudentManager();
+        studentManager.add(trang);
+        System.out.println("added " + trang.getInfomation());
     }
 }
