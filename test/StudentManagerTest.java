@@ -7,5 +7,6 @@ public class StudentManagerTest {
         StudentManager studentManager = new StudentManager();
         studentManager.add(trang);
         System.out.println("added " + trang.getInfomation());
+        studentManager.displayAll();
     }
 }
