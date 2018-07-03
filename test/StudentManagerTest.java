@@ -22,6 +22,8 @@ public class StudentManagerTest {
         System.out.println("added " + anh.getInfomation());
         studentManager.displayAll();
 
-
+        studentManager.find("Trang");
+        studentManager.find("Loan");
+        studentManager.find("Hung");
     }
 }
