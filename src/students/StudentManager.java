@@ -27,4 +27,19 @@ public class StudentManager {
         }
     }
 
+    public void find(String name) {
+        int found = 0;
+        for (int i = 0; i < size; i++) {
+            boolean match = students[i].getName().equals(name);
+            if (match) {
+                System.out.println("The position of student \"" + name + "\" in the list is " + (i + 1));
+                found++;
+                break;
+            }
+        }
+        boolean notfound = found == 0;
+        if (notfound) {
+            System.out.println("There is no student with name: " + name+" in the list");
+        }
+    }
 }
